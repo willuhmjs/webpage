@@ -16,7 +16,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        animation: fadeIn ease 3s;
+        animation: fadeIn ease 2s;
       }
 
       @keyframes fadeIn {
@@ -42,12 +42,16 @@
         text-decoration: inherit;
       }
 
+      a:hover {
+        opacity: 80%;
+      }
+
       h1, h4 {
         cursor: default;
       }
     </style>
   </head>
-  <body>
+  <body onclick="toggleTheme(this);">
     <div>
       <h1>willuhm-js</h1>
       <h4>software engineer, student, disciple</h4>
@@ -57,5 +61,18 @@
         <a target="_blank" href="mailto:willuhmjs@gmail.com">contact</a>
       </div>
     </div>
+    <script>
+      let theme = "dark";
+      function toggleTheme(e) {
+        if (theme === "dark") {
+          e.style.backgroundColor = "white"; e.style.color = "black";
+          theme = "white";
+        } else {
+          e.style.backgroundColor = "black";
+          e.style.color = "white";
+          theme = "dark";
+        }
+      }
+    </script>
   </body>
 </html>
