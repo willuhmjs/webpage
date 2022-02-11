@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,inital-scale=1">
-    <title>willuhm-js</title>
-    <style>
-      body {
-        text-align: center;
-        background-color: black;
-        font-family: sans-serif;
-        color: white;
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        user-select: none;
-        animation: fadeIn ease 2s;
-      }
 
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1">
+	<title>willuhm-js</title>
 
-      h1 {
-        font-size: 60px;
-      }
+	<meta name="description" content="software engineer, student, disciple">
 
-      h4 {
-        font-size: 30px;
-      }
+	<meta property="og:url" content="http://willuhm-js.github.io/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="willuhm-js">
+	<meta property="og:description" content="software engineer, student, disciple">
 
-      #links {
-        display: flex;
-        justify-content: space-around;
-      }
+	<meta property="twitter:domain" content="willuhm-js.github.io">
+	<meta property="twitter:url" content="http://willuhm-js.github.io/">
+	<meta name="twitter:title" content="willuhm-js">
+	<meta name="twitter:description" content="software engineer, student, disciple">
+	<style>
+		body {
+			text-align: center;
+			background-color: black;
+			font-family: sans-serif;
+			color: white;
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			user-select: none;
+			animation: fadeOpacity ease 2s;
+		}
 
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
+		@keyframes fadeOpacity {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
 
-      a:hover {
-        opacity: 80%;
-      }
+		h1 {
+			font-size: 55px;
+			/*transition: font-size 0.2s;*/
+			display: inline;
+		}
 
-      h1, h4 {
-        cursor: default;
-      }
-    </style>
-  </head>
-  <body ondblclick="toggleTheme(this);">
-    <div>
-      <h1>willuhm-js</h1>
-      <h4>software engineer, student, disciple</h4>
-      <div id="links"> 
-        <a target="_blank" href="https://github.com/willuhm-js/">about me</a>
-        <a target="_blank" href="https://github.com/willuhm-js?tab=repositories">my projects</a>
-        <a target="_blank" href="mailto:willuhmjs@gmail.com">contact</a>
-      </div>
-    </div>
-    <script>
-      let theme = "dark";
+		/*
+      h1:hover {
+        font-size: 65px;
+      }*/
+
+		h4 {
+			font-size: 30px;
+		}
+
+		#links {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: inherit;
+		}
+
+		a:hover {
+			opacity: 80%;
+		}
+
+		h1,
+		h4 {
+			cursor: default;
+		}
+	</style>
+</head>
+
+<body ondblclick="toggleTheme(this);">
+	<div>
+		<h1>willuhm-js</h1>
+		<h4>software engineer, student, disciple</h4>
+		<div id="links">
+			<a target="_blank" href="https://github.com/willuhm-js/">about me</a>
+			<a target="_blank" href="https://github.com/willuhm-js?tab=repositories">my projects</a>
+			<a target="_blank" href="mailto:willuhmjs@gmail.com">contact</a>
+		</div>
+	</div>
+	<script>
+		let theme = "dark";
       function toggleTheme(e) {
         if (theme === "dark") {
           e.style.backgroundColor = "white"; e.style.color = "black";
@@ -74,6 +100,7 @@
           theme = "dark";
         }
       }
-    </script>
-  </body>
+	</script>
+</body>
+
 </html>
