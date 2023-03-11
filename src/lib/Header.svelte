@@ -25,8 +25,12 @@
 	let i: number | undefined;
 	onMount(() => {
 		i = 0;
+		document.documentElement.style.setProperty('--brand-color', brands[i]?.color); // Set CSS variable
 		const interval = setInterval(() => {
-			if (i !== undefined) i = (i + 1) % brands.length;
+			if (i !== undefined) {
+				i = (i + 1) % brands.length;
+				document.documentElement.style.setProperty('--brand-color', brands[i]?.color); // Update CSS variable
+			}
 		}, 7000);
 		return () => clearInterval(interval);
 	});
@@ -34,18 +38,23 @@
 
 <div class="wrapper">
 	<div class="side" id="left">
-		<i class="fa-brands {brands[i]?.text}" style="color: {brands[i]?.color};" />
+		<i class="fa-brands {brands[i]?.text}" style="color: var(--brand-color);" />
 	</div>
-	<div id="center">willuhmjs</div>
+	<div id="center" style="color: var(--brand-color);">willuhmjs</div>
 	<div class="side" id="right">
-		<a href="mailto:willuhmjs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: {brands[i]?.color}" /></a>
-		<a href="https://github.com/willuhmjs" target="_blank"><i class="fa-brands fa-github" style="color: {brands[i]?.color}" /></a>
-		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"><i class="fa-brands fa-stack-overflow" style="color: {brands[i]?.color}" /></a>
-		<a href="https://discord.com/users/969629831300005918" target="_blank"><i class="fa-brands fa-discord" style="color:{brands[i]?.color}" /></a>
+		<a href="mailto:willuhmjs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: var(--brand-color);" /></a>
+		<a href="https://github.com/willuhmjs" target="_blank"><i class="fa-brands fa-github" style="color: var(--brand-color);" /></a>
+		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"><i class="fa-brands fa-stack-overflow" style="color: var(--brand-color);" /></a>
+		<a href="https://discord.com/users/969629831300005918" target="_blank"><i class="fa-brands fa-discord" style="color: var(--brand-color);" /></a>
 	</div>
 </div>
 
 <style>
+	/* Define CSS variable */
+	:root {
+		--brand-color: #68A063;
+	}
+
 	.wrapper {
 		display: flex;
 		padding: 1rem;
@@ -62,7 +71,7 @@
 		flex: 2;
 		font-size: 30px;
 		text-align: center;
-		transition: text-shadow 0.25s ease-in-out;
+		transition: color 0.25s ease-in-out;
 		display: inline-block;
 		user-select: none;
 	}
@@ -98,9 +107,5 @@
 	a {
 		color: inherit;
 		text-decoration: none;
-	}
-
-	#center:hover {
-		text-shadow: 1px 0 0 currentColor;
 	}
 </style>
