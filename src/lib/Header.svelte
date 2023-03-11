@@ -83,8 +83,13 @@
 		vertical-align: middle;
 	}
 
-	i:hover {
+	a i:hover {
 		/* do something */
+		color: #D3D3D3!important;
+	}
+
+	i {
+		transition: color 0.25s ease-in-out;
 	}
 
 	a {
