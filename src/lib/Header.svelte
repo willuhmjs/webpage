@@ -20,7 +20,7 @@
 		{ text: 'fa-raspberry-pi', color: '#C20931' },
 		{ text: 'fa-github-alt', color: '#181717' },
 		{ text: 'fa-git-alt', color: '#F1502F' },
-		{ text: 'fa-bootstrap', color: '#563D7C' },
+		{ text: 'fa-bootstrap', color: '#563D7C' }
 	]);
 	let i: number | undefined;
 	onMount(() => {
@@ -39,7 +39,7 @@
 	<div class="middle">willuhmjs</div>
 	<div class="side" id="right">
 		<i class="fa-solid fa-envelope" style="color: #4A4A4A;" />
-		<i class="fa-brands fa-github" style="color: #181717;"/>
+		<i class="fa-brands fa-github" style="color: #181717;" />
 		<i class="fa-brands fa-stack-overflow" style="color: #F48024;" />
 		<i class="fa-brands fa-discord" style="color: #7289DA;" />
 	</div>
