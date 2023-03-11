@@ -84,7 +84,7 @@
 	}
 
 	i:hover {
-		<!-- do something -->
+		/* do something */
 	}
 
 	a {
