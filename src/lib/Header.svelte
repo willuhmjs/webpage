@@ -36,12 +36,12 @@
 	<div class="side" id="left">
 		<i class="fa-brands {brands[i]?.text}" style="color: {brands[i]?.color};" />
 	</div>
-	<div class="middle">willuhmjs</div>
+	<div id="center">willuhmjs</div>
 	<div class="side" id="right">
-		<a href="mailto:willuhmjs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #4A4A4A;" /></a>
-		<a href="https://github.com/willuhmjs" target="_blank"><i class="fa-brands fa-github" style="color: #181717;" /></a>
-		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"><i class="fa-brands fa-stack-overflow" style="color: #F48024;" /></a>
-		<a href="https://discord.com/users/969629831300005918" target="_blank"><i class="fa-brands fa-discord" style="color: #7289DA;" /></a>
+		<a href="mailto:willuhmjs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: {brands[i]?.color}" /></a>
+		<a href="https://github.com/willuhmjs" target="_blank"><i class="fa-brands fa-github" style="color: {brands[i]?.color}" /></a>
+		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"><i class="fa-brands fa-stack-overflow" style="color: {brands[i]?.color}" /></a>
+		<a href="https://discord.com/users/969629831300005918" target="_blank"><i class="fa-brands fa-discord" style="color:{brands[i]?.color}" /></a>
 	</div>
 </div>
 
@@ -50,17 +50,18 @@
 		display: flex;
 		padding: 1rem;
 		align-items: center;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid #1a1a1a;
 	}
 
 	.side {
 		flex: 1;
 	}
 
-	.middle {
+	#center {
 		flex: 2;
 		font-size: 30px;
 		text-align: center;
+		
 	}
 
 	#left {
@@ -69,6 +70,7 @@
 
 	#left i {
 		margin-left: 5px;
+		vertical-align: middle;
 	}
 
 	#right {
@@ -79,5 +81,14 @@
 		margin: 0 0.25rem;
 		font-size: 25px;
 		vertical-align: middle;
+	}
+
+	i:hover {
+		<!-- do something -->
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
 	}
 </style>
