@@ -51,6 +51,7 @@
 		padding: 1rem;
 		align-items: center;
 		border-bottom: 1px solid #1a1a1a;
+		cursor: default;
 	}
 
 	.side {
@@ -61,7 +62,9 @@
 		flex: 2;
 		font-size: 30px;
 		text-align: center;
-		
+		transition: text-shadow 0.25s ease-in-out;
+		display: inline-block;
+		user-select: none;
 	}
 
 	#left {
@@ -95,5 +98,9 @@
 	a {
 		color: inherit;
 		text-decoration: none;
+	}
+
+	#center:hover {
+		text-shadow: 1px 0 0 currentColor;
 	}
 </style>
