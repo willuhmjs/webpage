@@ -38,10 +38,10 @@
 	</div>
 	<div class="middle">willuhmjs</div>
 	<div class="side" id="right">
-		<i class="fa-solid fa-envelope" style="color: #4A4A4A;" />
-		<i class="fa-brands fa-github" style="color: #181717;" />
-		<i class="fa-brands fa-stack-overflow" style="color: #F48024;" />
-		<i class="fa-brands fa-discord" style="color: #7289DA;" />
+		<a href="mailto:willuhmjs@gmail.com" target="_blank"><i class="fa-solid fa-envelope" style="color: #4A4A4A;" /></a>
+		<a href="https://github.com/willuhmjs" target="_blank"><i class="fa-brands fa-github" style="color: #181717;" /></a>
+		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"><i class="fa-brands fa-stack-overflow" style="color: #F48024;" /></a>
+		<a href="https://discord.com/users/969629831300005918" target="_blank"><i class="fa-brands fa-discord" style="color: #7289DA;" /></a>
 	</div>
 </div>
 
