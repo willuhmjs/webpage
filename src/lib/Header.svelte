@@ -97,7 +97,7 @@
 
 	a i:hover {
 		/* do something */
-		color: #D3D3D3!important;
+		filter: contrast(0.5);
 	}
 
 	i {
