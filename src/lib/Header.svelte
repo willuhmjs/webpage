@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import theme from './Theme';
 
 	const shuffleArray = (array: { text: string; color: string }[]) => {
 		for (let i = array.length - 1; i > 0; i--) {
@@ -9,27 +10,29 @@
 		return array;
 	};
 	const brands = shuffleArray([
-		{ text: 'fa-node-js', color: '#68A063' },
-		{ text: 'fa-square-js', color: '#F0DC4E' },
-		{ text: 'fa-html5', color: '#E44D26' },
-		{ text: 'fa-css3-alt', color: '#1572B6' },
-		{ text: 'fa-discord', color: '#7289DA' },
-		{ text: 'fa-linux', color: '#000000' },
-		{ text: 'fa-unity', color: '#222C37' },
-		{ text: 'fa-sass', color: '#CC6699' },
-		{ text: 'fa-raspberry-pi', color: '#C20931' },
-		{ text: 'fa-github-alt', color: '#181717' },
-		{ text: 'fa-git-alt', color: '#F1502F' },
-		{ text: 'fa-bootstrap', color: '#563D7C' }
-	]);
+  { text: 'fa-node-js', color: '104, 160, 99' },
+  { text: 'fa-square-js', color: '240, 220, 78' },
+  { text: 'fa-html5', color: '228, 77, 38' },
+  { text: 'fa-css3-alt', color: '21, 114, 182' },
+  { text: 'fa-discord', color: '114, 137, 218' },
+  { text: 'fa-linux', color: '0, 0, 0' },
+  { text: 'fa-unity', color: '34, 44, 55' },
+  { text: 'fa-sass', color: '204, 102, 153' },
+  { text: 'fa-raspberry-pi', color: '194, 9, 49' },
+  { text: 'fa-github-alt', color: '24, 23, 23' },
+  { text: 'fa-git-alt', color: '241, 80, 47' },
+  { text: 'fa-bootstrap', color: '86, 61, 124' }
+]);
 	let i: number | undefined;
 	onMount(() => {
 		i = 0;
-		document.documentElement.style.setProperty('--brand-color', brands[i]?.color); // Set CSS variable
+		$theme = brands[i]?.color;
+		document.documentElement.style.setProperty('--brand-color', `rgb(${$theme})`); // Set CSS variable
 		const interval = setInterval(() => {
 			if (i !== undefined) {
 				i = (i + 1) % brands.length;
-				document.documentElement.style.setProperty('--brand-color', brands[i]?.color); // Update CSS variable
+				$theme = brands[i]?.color;
+				document.documentElement.style.setProperty('--brand-color', `rgb(${$theme})`); // Update CSS variable
 			}
 		}, 7000);
 		return () => clearInterval(interval);
