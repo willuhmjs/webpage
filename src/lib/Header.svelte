@@ -10,19 +10,19 @@
 		return array;
 	};
 	const brands = shuffleArray([
-  { text: 'fa-node-js', color: '104, 160, 99' },
-  { text: 'fa-square-js', color: '240, 220, 78' },
-  { text: 'fa-html5', color: '228, 77, 38' },
-  { text: 'fa-css3-alt', color: '21, 114, 182' },
-  { text: 'fa-discord', color: '114, 137, 218' },
-  { text: 'fa-linux', color: '0, 0, 0' },
-  { text: 'fa-unity', color: '34, 44, 55' },
-  { text: 'fa-sass', color: '204, 102, 153' },
-  { text: 'fa-raspberry-pi', color: '194, 9, 49' },
-  { text: 'fa-github-alt', color: '24, 23, 23' },
-  { text: 'fa-git-alt', color: '241, 80, 47' },
-  { text: 'fa-bootstrap', color: '86, 61, 124' }
-]);
+		{ text: 'fa-node-js', color: '104, 160, 99' },
+		{ text: 'fa-square-js', color: '240, 220, 78' },
+		{ text: 'fa-html5', color: '228, 77, 38' },
+		{ text: 'fa-css3-alt', color: '21, 114, 182' },
+		{ text: 'fa-discord', color: '114, 137, 218' },
+		{ text: 'fa-linux', color: '0, 0, 0' },
+		{ text: 'fa-unity', color: '34, 44, 55' },
+		{ text: 'fa-sass', color: '204, 102, 153' },
+		{ text: 'fa-raspberry-pi', color: '194, 9, 49' },
+		{ text: 'fa-github-alt', color: '24, 23, 23' },
+		{ text: 'fa-git-alt', color: '241, 80, 47' },
+		{ text: 'fa-bootstrap', color: '86, 61, 124' }
+	]);
 	let i: number | undefined;
 	onMount(() => {
 		i = 0;
