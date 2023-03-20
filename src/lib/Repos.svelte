@@ -30,27 +30,29 @@
 <div class="wrapper">
 	{#if unsortedRepos}
 		{#each unsortedRepos as repo}
-			<div
-				class="repoItem"
-				style="border-bottom: 4px solid {colors[repo.language] || 'transparent'};"
-			>
-				<h3>{repo.name}</h3>
-				<p>{repo.description || 'No repository description.'}</p>
-				<div class="links">
-					<a href={repo.html_url + '/stargazers'} target="_blank">
-						<i class="fas fa-star" />
-						{repo.stargazers_count}
-					</a>
-					<a href={repo.html_url + '/issues'} target="_blank">
-						<i class="fas fa-exclamation-circle" />
-						{repo.open_issues_count}
-					</a>
-					<a href={repo.html_url + '/network/members'} target="_blank">
-						<i class="fas fa-code-branch" />
-						{repo.forks_count}
-					</a>
+			<a href={repo.html_url} target="_blank">
+				<div
+					class="repoItem"
+					style="border-bottom: 4px solid {colors[repo.language] || 'transparent'};"
+				>
+					<h3>{repo.name}</h3>
+					<p>{repo.description || 'No repository description.'}</p>
+					<div class="links">
+						<a href={repo.html_url + '/stargazers'} target="_blank">
+							<i class="fas fa-star" />
+							{repo.stargazers_count}
+						</a>
+						<a href={repo.html_url + '/issues'} target="_blank">
+							<i class="fas fa-exclamation-circle" />
+							{repo.open_issues_count}
+						</a>
+						<a href={repo.html_url + '/network/members'} target="_blank">
+							<i class="fas fa-code-branch" />
+							{repo.forks_count}
+						</a>
+					</div>
 				</div>
-			</div>
+			</a>
 		{/each}
 	{/if}
 </div>
@@ -83,7 +85,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
-		-webkit-line-clamp: 4;
+		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 	}
 
@@ -94,9 +96,12 @@
 	}
 
 	.links a {
-		text-decoration: none;
-		color: inherit;
 		margin: 0 0.1rem;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
 	}
 
 	.links a:hover {
