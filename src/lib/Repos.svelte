@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import theme from './Theme';
 	const colors = {
 		HTML: '#e34c26',
 		Svelte: '#ff3e00',
@@ -14,12 +13,12 @@
 		Astro: '#ff5a03',
 		EJS: '#a91e50'
 	};
-	let unsortedRepos;
+	let repos;
 	async function updateRepos(page: number = 1) {
 		const data = await fetch(
 			'https://api.github.com/users/willuhmjs/repos?per_page=9&page=1&sort=updated'
 		);
-		unsortedRepos = await data.json();
+		repos = await data.json();
 	}
 
 	onMount(updateRepos);
@@ -28,8 +27,8 @@
 <!-- right aligned dropdown for sort type -->
 <h2 class="header">Repositories</h2>
 <div class="wrapper">
-	{#if unsortedRepos}
-		{#each unsortedRepos as repo}
+	{#if repos}
+		{#each repos as repo}
 			<a href={repo.html_url} target="_blank">
 				<div
 					class="repoItem"

@@ -1,6 +1,7 @@
 <script>
 	import Header from '../lib/Header.svelte';
 	import Repos from '../lib/Repos.svelte';
+	import About from '../lib/About.svelte';
 </script>
 
 <link
@@ -13,6 +14,7 @@
 
 <div class="wrapper">
 	<Header />
+	<About />
 	<Repos />
 </div>
 
