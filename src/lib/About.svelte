@@ -19,25 +19,26 @@ date.setMinutes ( date.getMinutes() + easternTimeOffset);
 </script>
 {#if user}
     <div class="wrapper">
-        <img src={user.avatar_url} alt="My profile icon" />
         <div>
             <h1>{user.name}</h1>
             <p>{user.bio}</p>
         <div class="links">
             <a href="https://www.bible.com/bible/111/rev.21.2">
                 <i class="fa-solid fa-map-marker-alt"></i>
-                <span>{user.location}</span>
+                {user.location}
             </a>
             <a href="mailto:me@willuhmjs.com?subject=Hello%20there!">
                 <i class="fa-solid fa-envelope"></i>
-                <span>me@willuhmjs.com</span>
+                me@willuhmjs.com
             </a>
             <a href="https://time.is/New_York">
                 <i class="fa-solid fa-clock"></i>
-                <span>{date.getHours()}:{date.getMinutes()}</span>
+                {date.getHours().toString().padStart(2, '0')}:{date.getMinutes().toString().padStart(2, '0')}
             </a>
         </div>
         </div>
+        <img src={user.avatar_url} alt="My profile icon" />
+
     </div>
 {/if}
 
@@ -45,7 +46,6 @@ date.setMinutes ( date.getMinutes() + easternTimeOffset);
     .wrapper {
         display: flex;
         box-sizing: border-box;
-        text-align: right;
         margin: 2rem auto;
         max-width: 600px;
     }
@@ -53,7 +53,11 @@ date.setMinutes ( date.getMinutes() + easternTimeOffset);
     .wrapper img {
         border-radius: 50%;
         max-width: 15rem;
+    }
+
+    .wrapper div {
         margin-right: auto;
+
     }
 
     .links {
@@ -62,7 +66,28 @@ date.setMinutes ( date.getMinutes() + easternTimeOffset);
 
     .links a {
         margin: 5px 0;
-        color: inherit;
         text-decoration: none;
+        color: inherit;
+    }
+
+    .links a i {
+        margin-right: 6px;
+    }
+
+    .fa-map-marker-alt {
+        color: #ff4747;
+    }
+
+    .fa-envelope {
+        color: #50ff47;
+    }
+
+    .fa-clock {
+        color: #d747ff;
+    }
+
+    a:hover {
+        filter: brightness(0.5);
+        color: #333;
     }
 </style>
