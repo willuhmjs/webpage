@@ -15,7 +15,6 @@
 <div class="wrapper">
 	<Header />
 	<About />
-	<Repos />
 </div>
 
 <style>

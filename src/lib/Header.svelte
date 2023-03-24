@@ -11,7 +11,6 @@
 	};
 	const brands = shuffleArray([
 		{ text: 'fa-node-js', color: '104, 160, 99' },
-		{ text: 'fa-square-js', color: '240, 220, 78' },
 		{ text: 'fa-html5', color: '228, 77, 38' },
 		{ text: 'fa-css3-alt', color: '21, 114, 182' },
 		{ text: 'fa-discord', color: '114, 137, 218' },
