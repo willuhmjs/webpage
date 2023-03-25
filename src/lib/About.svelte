@@ -77,18 +77,7 @@
 		margin-right: 6px;
 	}
 
-	.fa-map-marker-alt {
-		color: #ff4747;
-	}
-
-	.fa-envelope {
-		color: #0cf500;
-	}
-
-	.fa-clock {
-		color: #d747ff;
-	}
-
+	
 	a:hover {
 		filter: brightness(0.5);
 		color: #333;
