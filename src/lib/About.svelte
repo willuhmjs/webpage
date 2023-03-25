@@ -82,7 +82,7 @@
 	}
 
 	.fa-envelope {
-		color: #50ff47;
+		color: #0cf500;
 	}
 
 	.fa-clock {
