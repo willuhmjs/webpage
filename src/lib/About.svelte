@@ -79,7 +79,6 @@
 
 	
 	a:hover {
-		filter: brightness(0.5);
-		color: #333;
+		filter: contrast(0.5);
 	}
 </style>
