@@ -8,12 +8,10 @@
 	}
 	onMount(updateUser);
 
-	var offset = new Date().getTimezoneOffset(); // getting offset to make time in gmt+0 zone (UTC) (for gmt+5 offset comes as -300 minutes)
 	let date = new Date();
-	date.setMinutes(date.getMinutes() + offset); // date now in UTC time
-
-	var easternTimeOffset = -240; //for dayLight saving, Eastern time become 4 hours behind UTC thats why its offset is -4x60 = -240 minutes. So when Day light is not active the offset will be -300
-	date.setMinutes(date.getMinutes() + easternTimeOffset);
+	let offset = date.getTimezoneOffset(); 
+	setInterval(() => date = new Date(), 1000);
+	date.setMinutes(date.getMinutes() + offset - 240);
 </script>
 
 <!-- large pfp icon on the left, info about me on the right. include header and description. maybe get it dynamically from api-->
