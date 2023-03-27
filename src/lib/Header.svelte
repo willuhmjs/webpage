@@ -3,7 +3,7 @@
 		willuhmjs
 	</div>
 	<div class="side" id="right">
-		<a>there will be shit here</a>
+		<a>there will be stuff here</a>
 	</div>
 </div>
 

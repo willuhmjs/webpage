@@ -8,18 +8,18 @@
         </div>
     </div>
     <div class="blogPost">
-        <h2>there will be shit here &lt;3</h2>
+        <h2>there will be stuff here &lt;3</h2>
         <div class="blogPostDescription">
             <p>
-                there will totally be shit here soon, i promise
+                there will totally be stuff here soon, i promise
             </p>
         </div>
     </div>
     <div class="blogPost">
-        <h2>there will be shit here &lt;3</h2>
+        <h2>there will be stuff here &lt;3</h2>
         <div class="blogPostDescription">
             <p>
-                there will totally be shit here soon, i promise
+                there will totally be stuff here soon, i promise
             </p>
         </div>
     </div>
