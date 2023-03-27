@@ -47,6 +47,8 @@
 	.wrapper {
 		display: flex;
 		box-sizing: border-box;
+		max-width: 600px;
+		margin: 2rem auto;
 	}
 
 	.wrapper img {
@@ -76,5 +78,9 @@
 	
 	a:hover {
 		filter: contrast(0.5);
+	}
+
+	h1 {
+		font-weight: normal;
 	}
 </style>

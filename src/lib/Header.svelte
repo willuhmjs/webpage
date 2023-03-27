@@ -1,48 +1,9 @@
-<script lang="ts">
-	import { onMount } from 'svelte';
-	import theme from './Theme';
-
-	const shuffleArray = (array: { text: string; color: string }[]) => {
-		for (let i = array.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[array[i], array[j]] = [array[j], array[i]];
-		}
-		return array;
-	};
-	const brands = shuffleArray([
-		{ text: 'fa-node-js', color: '104, 160, 99' },
-		{ text: 'fa-html5', color: '228, 77, 38' },
-		{ text: 'fa-css3-alt', color: '21, 114, 182' },
-		{ text: 'fa-discord', color: '114, 137, 218' },
-		{ text: 'fa-linux', color: '0, 0, 0' },
-		{ text: 'fa-unity', color: '34, 44, 55' },
-		{ text: 'fa-sass', color: '204, 102, 153' },
-		{ text: 'fa-raspberry-pi', color: '194, 9, 49' },
-		{ text: 'fa-github-alt', color: '24, 23, 23' },
-		{ text: 'fa-git-alt', color: '241, 80, 47' },
-		{ text: 'fa-bootstrap', color: '86, 61, 124' }
-	]);
-	let i: number | undefined;
-	onMount(() => {
-		i = 0;
-		$theme = brands[i]?.color;
-		document.documentElement.style.setProperty('--brand-color', `rgb(${$theme})`); // Set CSS variable
-		const interval = setInterval(() => {
-			if (i !== undefined) {
-				i = (i + 1) % brands.length;
-				$theme = brands[i]?.color;
-				document.documentElement.style.setProperty('--brand-color', `rgb(${$theme})`); // Update CSS variable
-			}
-		}, 7000);
-		return () => clearInterval(interval);
-	});
-</script>
-
 <div class="wrapper">
 	<div class="side" id="left">
 		willuhmjs
 	</div>
 	<div class="side" id="right">
+		<a>there will be shit here</a>
 	</div>
 </div>
 
@@ -57,47 +18,21 @@
 		padding: 1rem;
 		align-items: center;
 		cursor: default;
+		margin: auto;
+		max-width: 900px;
 	}
 
 	.side {
 		flex: 1;
 	}
 
-	#center {
-		flex: 2;
-		font-size: 30px;
-		text-align: center;
-		transition: color 0.25s ease-in-out;
-		display: inline-block;
-		user-select: none;
-	}
 
 	#left {
 		font-size: 30px;
 	}
 
-	#left i {
-		margin-left: 5px;
-		vertical-align: middle;
-	}
-
 	#right {
 		text-align: right;
-	}
-
-	#right i {
-		margin: 0 0.25rem;
-		font-size: 25px;
-		vertical-align: middle;
-	}
-
-	a i:hover {
-		/* do something */
-		filter: contrast(0.5);
-	}
-
-	i {
-		transition: color 0.25s ease-in-out;
 	}
 
 	a {

@@ -1,6 +1,6 @@
 <script>
-	import Header from '../lib/Header.svelte';
-	import About from '../lib/About.svelte';
+	import Header from '../../lib/Header.svelte';
+	import BlogPosts from '../../lib/BlogPosts.svelte';
 </script>
 
 <link
@@ -13,7 +13,7 @@
 
 <div class="wrapper">
 	<Header />
-	<About/>
+	<BlogPosts/>
 </div>
 
 <style>
