@@ -1,18 +1,18 @@
 <div class="wrapper">
 	<div class="blogPost">
-		<h2>cloudflare tunnels + raspberry pi</h2>
+		<a href="/blog/post"><h2>cloudflare tunnels + raspberry pi</h2></a>
 		<div class="blogPostDescription">
 			<p>access your raspberry pi from anywhere in the world with cloudflare tunnels</p>
 		</div>
 	</div>
 	<div class="blogPost">
-		<h2>raspberry pi cooling techniques</h2>
+		<a href="/blog/post"><h2>raspberry pi cooling techniques</h2></a>
 		<div class="blogPostDescription">
 			<p>how to make your raspberry pi as cool as a cucumber, or a raspberry</p>
 		</div>
 	</div>
 	<div class="blogPost">
-		<h2>there will be stuff here &lt;3</h2>
+		<a href="/blog/post"><h2>there will be stuff here &lt;3</h2></a>
 		<div class="blogPostDescription">
 			<p>there will totally be stuff here soon, i promise</p>
 		</div>
@@ -29,11 +29,20 @@
 		margin-top: 1rem;
 	}
 
+    .blogPost a {
+        color: inherit;
+        text-decoration: none;
+    }
+
 	.blogPost h2 {
 		font-weight: normal;
-		border-bottom: 1px solid #d9d9d9;
+		border-bottom: 2px dashed #d9d9d9;
 		display: inline-block;
-		padding-bottom: 10px;
-		margin-bottom: 0;
+        padding-bottom: 10px;
+        margin-bottom: 0;
 	}
+
+    .blogPost h2:hover {
+        border-bottom: 2px solid #d9d9d9;
+    }
 </style>
