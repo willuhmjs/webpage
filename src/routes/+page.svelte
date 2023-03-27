@@ -16,7 +16,6 @@
 <div class="wrapper">
 	<Header />
 	<div class="body">
-		<About />
 		<BlogPosts />
 	</div>
 </div>
@@ -29,7 +28,7 @@
 
 	.body {
 		max-width: 600px;
-		margin: 2rem auto;
+		margin: 1rem;
 	}
 
 </style>

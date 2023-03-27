@@ -40,22 +40,9 @@
 
 <div class="wrapper">
 	<div class="side" id="left">
-		<i class="fa-brands {brands[i]?.text}" style="color: var(--brand-color);" />
+		willuhmjs
 	</div>
-	<div id="center" style="color: var(--brand-color);">willuhmjs</div>
 	<div class="side" id="right">
-		<a href="mailto:willuhmjs@gmail.com" target="_blank"
-			><i class="fa-solid fa-envelope" style="color: var(--brand-color);" /></a
-		>
-		<a href="https://github.com/willuhmjs" target="_blank"
-			><i class="fa-brands fa-github" style="color: var(--brand-color);" /></a
-		>
-		<a href="https://stackoverflow.com/users/21373280/willuhmjs" target="_blank"
-			><i class="fa-brands fa-stack-overflow" style="color: var(--brand-color);" /></a
-		>
-		<a href="https://discord.com/users/969629831300005918" target="_blank"
-			><i class="fa-brands fa-discord" style="color: var(--brand-color);" /></a
-		>
 	</div>
 </div>
 
@@ -69,7 +56,6 @@
 		display: flex;
 		padding: 1rem;
 		align-items: center;
-		border-bottom: 1px solid #1a1a1a;
 		cursor: default;
 	}
 

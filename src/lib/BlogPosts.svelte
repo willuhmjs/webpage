@@ -18,11 +18,6 @@
 </div>
 
 <style>
-    .wrapper {
-        margin-top: 3rem;
-        border-top: 1px solid #d9d9d9;
-    }
-
     .blogPost {
         margin-top: 1rem;
     }
