@@ -13,9 +13,8 @@
 
 <div class="wrapper">
 	<Header />
-	<About/>
+	<About />
 </div>
 
 <style>
-
 </style>

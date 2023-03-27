@@ -1,7 +1,5 @@
 <div class="wrapper">
-	<div class="side" id="left">
-		willuhmjs
-	</div>
+	<div class="side" id="left">willuhmjs</div>
 	<div class="side" id="right">
 		<a>there will be stuff here</a>
 	</div>
@@ -25,7 +23,6 @@
 	.side {
 		flex: 1;
 	}
-
 
 	#left {
 		font-size: 30px;

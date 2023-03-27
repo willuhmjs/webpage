@@ -9,8 +9,8 @@
 	onMount(updateUser);
 
 	let date = new Date();
-	let offset = date.getTimezoneOffset(); 
-	setInterval(() => date = new Date(), 1000);
+	let offset = date.getTimezoneOffset();
+	setInterval(() => (date = new Date()), 1000);
 	date.setMinutes(date.getMinutes() + offset - 240);
 </script>
 
@@ -75,7 +75,6 @@
 		margin-right: 6px;
 	}
 
-	
 	a:hover {
 		filter: contrast(0.5);
 	}

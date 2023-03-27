@@ -13,9 +13,8 @@
 
 <div class="wrapper">
 	<Header />
-	<BlogPosts/>
+	<BlogPosts />
 </div>
 
 <style>
-
 </style>
