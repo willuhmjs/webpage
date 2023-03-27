@@ -6,9 +6,9 @@
 		</div>
 	</div>
 	<div class="blogPost">
-		<h2>there will be stuff here &lt;3</h2>
+		<h2>raspberry pi cooling techniques</h2>
 		<div class="blogPostDescription">
-			<p>there will totally be stuff here soon, i promise</p>
+			<p>how to make your raspberry pi as cool as a cucumber, or a raspberry</p>
 		</div>
 	</div>
 	<div class="blogPost">
@@ -21,7 +21,7 @@
 
 <style>
 	.wrapper {
-		max-width: 600px;
+		max-width: 900px;
 		margin: 1rem auto;
 	}
 
