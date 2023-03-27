@@ -49,8 +49,6 @@
 	.wrapper {
 		display: flex;
 		box-sizing: border-box;
-		margin: 2rem auto;
-		max-width: 600px;
 	}
 
 	.wrapper img {

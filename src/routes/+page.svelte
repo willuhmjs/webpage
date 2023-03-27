@@ -2,6 +2,7 @@
 	import Header from '../lib/Header.svelte';
 	import Repos from '../lib/Repos.svelte';
 	import About from '../lib/About.svelte';
+	import BlogPosts from '../lib/BlogPosts.svelte';
 </script>
 
 <link
@@ -14,7 +15,10 @@
 
 <div class="wrapper">
 	<Header />
-	<About />
+	<div class="body">
+		<About />
+		<BlogPosts />
+	</div>
 </div>
 
 <style>
@@ -22,4 +26,10 @@
 		margin: auto;
 		max-width: 900px;
 	}
+
+	.body {
+		max-width: 600px;
+		margin: 2rem auto;
+	}
+
 </style>
