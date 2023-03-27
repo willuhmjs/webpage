@@ -24,7 +24,7 @@
     }
 
     .blogPost {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .blogPost h2 {
