@@ -1,8 +1,8 @@
 <div class="wrapper">
 	<div class="side" id="left"><a href="/">willuhmjs</a></div>
 	<div class="side" id="right">
-		<a href="/">about</a>
-		<a href="/blog">blog</a>
+		<a href="/about">about</a>
+		<a href="/">blog</a>
 	</div>
 </div>
 
