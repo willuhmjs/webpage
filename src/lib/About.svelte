@@ -82,4 +82,15 @@
 	h1 {
 		font-weight: normal;
 	}
+
+	@media (max-width: 616px) {
+		.wrapper {
+			display: block;
+			padding: 0 1rem;
+		}
+
+		.wrapper img {
+			display: none;
+		}
+	}
 </style>
