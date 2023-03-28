@@ -45,6 +45,7 @@
 		border-bottom: 2px dotted lightgray;
 		display: inline-block;
         padding-bottom: 10px;
+		margin-bottom: 0;
 	}
 
     .blogPost h2:hover {
