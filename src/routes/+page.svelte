@@ -15,6 +15,3 @@
 	<Header />
 	<BlogPosts />
 </div>
-
-<style>
-</style>
