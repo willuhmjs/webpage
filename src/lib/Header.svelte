@@ -20,15 +20,18 @@
 		flex: 1;
 	}
 
+	a:hover, #right a:hover {
+		border-bottom: 2px solid lightgray;
+	}
+
+	#right a {
+		border-bottom: 2px dotted lightgray;
+	}
+
 	a {
 		padding-bottom: 2px;
 		text-decoration: none;
 		color: inherit;
-		border-bottom: 2px dotted lightgray;
-	}
-
-	a:hover {
-		border-bottom: 2px solid lightgray;
 	}
 
 	#left {
