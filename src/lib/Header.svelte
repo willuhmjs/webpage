@@ -44,6 +44,6 @@
 	}
 
 	#right a:not(:last-child) {
-		margin-right: 10px;
+		margin-right: 13px;
 	} 
 </style>
