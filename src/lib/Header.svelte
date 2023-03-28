@@ -1,17 +1,12 @@
 <div class="wrapper">
-	<div class="side" id="left">willuhmjs</div>
+	<div class="side" id="left"><a href="/">willuhmjs</a></div>
 	<div class="side" id="right">
-		<a>about</a>
-		<a>blog</a>
+		<a href="/">about</a>
+		<a href="/blog">blog</a>
 	</div>
 </div>
 
 <style>
-	/* Define CSS variable */
-	:root {
-		--brand-color: #68a063;
-	}
-
 	.wrapper {
 		display: flex;
 		padding: 1rem;
@@ -23,6 +18,16 @@
 
 	.side {
 		flex: 1;
+	}
+
+	a {
+		padding-bottom: 2px;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	a:hover {
+		border-bottom: 2px solid lightgray;
 	}
 
 	#left {

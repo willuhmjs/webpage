@@ -42,13 +42,13 @@
 
 	.blogPost h2 {
 		font-weight: normal;
-		border-bottom: 2px dashed #d9d9d9;
+		border-bottom: 2px dotted lightgray;
 		display: inline-block;
         padding-bottom: 10px;
         margin-bottom: 0;
 	}
 
     .blogPost h2:hover {
-        border-bottom: 2px solid #d9d9d9;
+        border-bottom: 2px solid lightgray;
     }
 </style>
