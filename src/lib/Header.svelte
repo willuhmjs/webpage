@@ -24,6 +24,7 @@
 		padding-bottom: 2px;
 		text-decoration: none;
 		color: inherit;
+		border-bottom: 2px dotted lightgray;
 	}
 
 	a:hover {
