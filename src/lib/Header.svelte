@@ -1,7 +1,8 @@
 <div class="wrapper">
 	<div class="side" id="left">willuhmjs</div>
 	<div class="side" id="right">
-		<a>there will be stuff here</a>
+		<a>about</a>
+		<a>blog</a>
 	</div>
 </div>
 
@@ -32,8 +33,12 @@
 		text-align: right;
 	}
 
-	a {
+	#right a {
 		color: inherit;
 		text-decoration: none;
 	}
+
+	#right a:not(:last-child) {
+		margin-right: 10px;
+	} 
 </style>
