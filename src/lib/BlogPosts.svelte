@@ -28,11 +28,11 @@
 <style>
 	.wrapper {
 		max-width: 900px;
-		margin: 1rem auto;
+		margin: 5px auto;
 	}
 
 	.blogPost {
-		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
     .blogPost a {
@@ -45,10 +45,16 @@
 		border-bottom: 2px dotted lightgray;
 		display: inline-block;
         padding-bottom: 10px;
-        margin-bottom: 0;
 	}
 
     .blogPost h2:hover {
         border-bottom: 2px solid lightgray;
     }
+
+	@media (max-width: 616px) {
+		.wrapper {
+			display: block;
+			padding: 0 1rem;
+		}
+	}
 </style>
