@@ -1,53 +1,38 @@
-<div class="wrapper">
-	<div class="side" id="left"><a href="/">willuhmjs</a></div>
-	<div class="side" id="right">
-		<a href="/">blog</a>
-		<a href="/about">about</a>
-	</div>
-</div>
+<script>
+    import { colorStore } from "./Color";
+</script>
+
+<header>
+    <nav>
+        <a href="/" class="title">willuhmjs</a>
+        <div class="spacer"/>
+        <a href="/"><i class="fa-regular fa-file-lines"></i> blog</a>
+        <a href="/about"><i class="fa-regular fa-user"></i> about</a>
+    </nav>
+</header>
 
 <style>
-	.wrapper {
-		display: flex;
-		padding: 1rem;
-		align-items: center;
-		cursor: default;
-		margin: auto;
-		max-width: 900px;
-	}
+    header {
+        margin-bottom: 2rem;
+    }
 
-	.side {
-		flex: 1;
-	}
+    nav {
+        display: flex;
+        column-gap: 1.5ch;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
 
-	a:hover, #right a:hover {
-		border-bottom: 2px solid lightgray;
-	}
+    header .title {
+        font-size: 1.25em;
+        border: 2px solid transparent;
+    }
 
-	#right a {
-		border-bottom: 2px dotted lightgray;
-	}
+    .spacer {
+        flex-grow: 1;
+    }
 
-	a {
-		padding-bottom: 2px;
-		text-decoration: none;
-		color: inherit;
-	}
-
-	#left {
-		font-size: 30px;
-	}
-
-	#right {
-		text-align: right;
-	}
-
-	#right a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	#right a:not(:last-child) {
-		margin-right: 13px;
-	} 
+    i {
+        margin-right: 3px;
+    }
 </style>
