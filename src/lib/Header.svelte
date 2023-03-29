@@ -1,7 +1,3 @@
-<script>
-    import { colorStore } from "./Color";
-</script>
-
 <header>
     <nav>
         <a href="/" class="title">willuhmjs</a>
