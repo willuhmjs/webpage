@@ -4,6 +4,8 @@
     padding: 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
 }
 
 body {
