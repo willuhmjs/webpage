@@ -5,17 +5,17 @@
 <section>
 	<ul style="--color: {$colorStore}">
 		<li>
-			<h2><a href="/">cloudflare tunnels and raspberry pi</a></h2>
+			<h2><a href="/">Tunneling SSH using Cloudflare</a></h2>
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
 		</li>
 		<li>
-			<h2><a href="/">raspberry pi cooling techniques</a></h2>
+			<h2><a href="/">Effectively cooling your Raspberry Pi</a></h2>
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
 		</li>
-		<li>
-			<h2><a href="/">there will be stuff here &lt;3</a></h2>
+        <li>
+            <h2><a href="/">Learning to code simplified</a></h2>
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>  
-		</li>
+        </li>
 	</ul>
 </section>
 
@@ -24,14 +24,13 @@
 		list-style: none;
 		margin-left: 0;
 		padding: 0;
-	}
+    }
 
 	li {
-		margin-top: 1.5em;
+		margin-top: 1.5rem;
 	}
 
 	li h2 {
-		color: var(--color, transparent);
 		margin-bottom: 17px;
 	}
 
