@@ -18,6 +18,7 @@
 <style>
 	section {
 		display: flex;
+		margin-bottom: 2rem;
 	}
 
 	p {

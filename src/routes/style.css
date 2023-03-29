@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    padding: 2ch;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px dotted lightgray;
+}
+
+a:hover {
+    border-bottom: 2px solid lightgray !important;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #fcfcfc;
+        color: #1a1a1a;
+    }
+
+    .subtitle {
+        color: #404040;
+    }
+}
+
+/* todo use light random color generate + set color for post descriptions */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #fcfcfc;
+    }
+    
+    .subtitle {
+        color: #a9a9a9;
+    }
+}

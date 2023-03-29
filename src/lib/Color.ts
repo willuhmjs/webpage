@@ -1,7 +1,12 @@
 import randomColor from 'randomcolor';
-import { writable } from 'svelte/store';
-const color = randomColor({
-	luminosity: 'dark'
+import { onMount } from 'svelte';
+import { readable } from 'svelte/store';
+
+export const colorStore = readable("transparent", (set) => {
+	onMount(() => {
+		set(randomColor({
+			luminosity: 'dark'
+		}));
+	})
 });
 
-export const colorStore = writable(color);

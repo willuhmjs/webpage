@@ -31,7 +31,7 @@
 	}
 
 	li h2 {
-		color: var(--color);
+		color: var(--color, transparent);
 	}
 
 	li .subtitle {
