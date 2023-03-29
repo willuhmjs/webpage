@@ -36,10 +36,6 @@ a:hover {
         background-color: #fcfcfc;
         color: #1a1a1a;
     }
-
-    .subtitle {
-        color: #404040;
-    }
 }
 
 /* todo use light random color generate + set color for post descriptions */
@@ -47,9 +43,5 @@ a:hover {
     body {
         background-color: #1a1a1a;
         color: #fcfcfc;
-    }
-    
-    .subtitle {
-        color: #a9a9a9;
     }
 }

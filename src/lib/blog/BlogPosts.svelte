@@ -5,16 +5,16 @@
 <section>
 	<ul style="--color: {$colorStore}">
 		<li>
-			<h2><a href="/">cloudflare tunnels + raspberry pi</a></h2>
-			<p class="subtitle">access your raspberry pi from anywhere in the world with cloudflare tunnels</p>
+			<h2><a href="/">cloudflare tunnels and raspberry pi</a></h2>
+            <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
 		</li>
 		<li>
 			<h2><a href="/">raspberry pi cooling techniques</a></h2>
-			<p class="subtitle">how to make your raspberry pi as cool as a cucumber (or a raspberry)</p>
+            <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
 		</li>
 		<li>
 			<h2><a href="/">there will be stuff here &lt;3</a></h2>
-			<p class="subtitle">there will totally be stuff here soon, I promise</p>
+            <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>  
 		</li>
 	</ul>
 </section>
@@ -32,10 +32,11 @@
 
 	li h2 {
 		color: var(--color, transparent);
+		margin-bottom: 17px;
 	}
 
-	li .subtitle {
-		margin-top: 17px;
-		font-style: italic;
-	}
+    .subtitle {
+        margin-bottom: 10px;
+        color: #737373;
+    }
 </style>
