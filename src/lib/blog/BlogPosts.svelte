@@ -1,9 +1,5 @@
-<script lang="ts">
-	import { colorStore } from '../Color';
-</script>
-
 <section>
-	<ul style="--color: {$colorStore}">
+	<ul>
 		<li>
 			<h2><a href="/">Tunneling SSH using Cloudflare</a></h2>
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
@@ -13,7 +9,7 @@
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
 		</li>
         <li>
-            <h2><a href="/">Learning to code simplified</a></h2>
+            <h2><a href="/">Simplifying learning to code</a></h2>
             <p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>  
         </li>
 	</ul>
