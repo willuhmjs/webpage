@@ -1,7 +1,7 @@
 <section>
 	<img alt="profile photograph" src="https://avatars.githubusercontent.com/u/58738637?v=4" />
 	<div>
-		<h2>William Faircloth</h2>
+		<h1>William Faircloth</h1>
 		<p>software engineer, student, disciple</p>
 		<div class="links">
 			<a href="https://github.com/willuhmjs" target="_blank" rel="noopener noreferrer"

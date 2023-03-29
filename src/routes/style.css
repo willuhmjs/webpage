@@ -16,10 +16,14 @@ body {
     font-size: 18px;
 }
 
-h1,
+h1, h2, h3 {
+    font-weight: normal;
+}
+
 h2,
 h3 {
-    font-weight: normal;
+    font-size: 1.5rem;
+    color: #08608c;
 }
 
 a {
@@ -45,5 +49,9 @@ a:hover {
     body {
         background-color: #1a1a1a;
         color: #fcfcfc;
+    }
+
+    h2, h3 {
+        color: inherit;
     }
 }
