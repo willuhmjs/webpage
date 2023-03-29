@@ -4,6 +4,5 @@
 	import Bio from '$lib/about/Bio.svelte';
 </script>
 
-<Header />
 <Card />
 <Bio />
