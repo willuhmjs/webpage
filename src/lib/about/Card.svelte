@@ -16,6 +16,10 @@
 </section>
 
 <style>
+	div * {
+      margin: 0;
+    }
+
 	section {
 		display: flex;
 		margin-bottom: 2rem;
