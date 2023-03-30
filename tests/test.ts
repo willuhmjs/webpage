@@ -1,6 +1,10 @@
 import { expect, test } from '@playwright/test';
 
-test('index page has expected h1', async ({ page }) => {
+test('index page has expected header and navbar', async ({ page }) => {
 	await page.goto('/');
-	await expect(page.getByRole('heading', { name: 'Welcome to SvelteKit' })).toBeVisible();
+	const navbar = page.getByRole('navigation');
+	const header = page.getByRole('banner');
+	await expect(header).toBeVisible();
+	await expect(navbar).toBeVisible();
+	await expect(navbar).toHaveText("willuhmjs   blog  about");
 });
