@@ -1,5 +1,4 @@
 import fs from 'fs';
-import { resolve } from 'path';
 
 async function fetchTheme(name) {
 	const res = await fetch(
