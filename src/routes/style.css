@@ -49,11 +49,11 @@ a:hover {
     }
 
     code, .rehype-code-title + div[data-rehype-pretty-code-fragment] {
-        background-color: #1d1d1d!important;
+        background-color: #252525!important;
     }
 
     code > .line::before, .rehype-code-title {
-        border-color: #f2f2f2!important;
+        border-color: #575757!important;
     }
 }
 
