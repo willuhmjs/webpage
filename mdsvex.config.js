@@ -2,6 +2,9 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import codeTitle from 'rehype-code-titles';
 import rehypePrettyCode from 'rehype-pretty-code';
 
+import dark from './themes/dark.json' assert { type: "json" };
+import light from './themes/light.json' assert { type: "json" };
+
 const config = defineConfig({
 	extensions: ['.svelte.md', '.md', '.svx'],
 
@@ -18,8 +21,10 @@ const config = defineConfig({
 		[
 			rehypePrettyCode,
 			{
-				/* todo find a way to make this work with dark theme */
-				theme: 'github-light'
+				theme: {
+					dark: dark,
+					light: light
+				}
 			}
 		]
 	]
