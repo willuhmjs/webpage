@@ -7,7 +7,10 @@
 			<a href="https://github.com/willuhmjs" target="_blank" rel="noopener noreferrer"
 				><i class="fa-brands fa-fw fa-github" />willuhmjs</a
 			>
-			<a href="https://discord.com/users/969629831300005918" target="_blank" rel="noopener noreferrer"
+			<a
+				href="https://discord.com/users/969629831300005918"
+				target="_blank"
+				rel="noopener noreferrer"
 				><i class="fa-brands fa-fw fa-discord" id="discord" />willuhmjs#1995</a
 			>
 			<a href="mailto:me@willuhmjs.com"><i class="fa-solid fa-envelope" />me@willuhmjs.com</a>
@@ -17,8 +20,8 @@
 
 <style>
 	div * {
-      margin: 0;
-    }
+		margin: 0;
+	}
 
 	section {
 		display: flex;

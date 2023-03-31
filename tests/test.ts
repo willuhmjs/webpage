@@ -6,5 +6,5 @@ test('index page has expected header and navbar', async ({ page }) => {
 	const header = page.getByRole('banner');
 	await expect(header).toBeVisible();
 	await expect(navbar).toBeVisible();
-	await expect(navbar).toHaveText("willuhmjs   blog  about");
+	await expect(navbar).toHaveText('willuhmjs   blog  about');
 });
