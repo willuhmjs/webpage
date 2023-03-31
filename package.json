@@ -34,6 +34,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-static": "^2.0.1"
+		"@sveltejs/adapter-static": "^2.0.1",
+		"rehype-code-titles": "^1.2.0",
+		"rehype-pretty-code": "^0.9.4",
+		"shiki": "^0.14.1"
 	}
 }

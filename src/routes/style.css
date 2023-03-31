@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
     box-sizing: border-box;
-    line-height: 1.5rem;
 }
 
 body {
@@ -9,17 +8,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 h1, h2, h3 {
     font-weight: normal;
+    color: #08608c;
 }
 
-h2,
-h3 {
-    font-size: 1.5rem;
-    color: #08608c;
+h1 {
+    margin-bottom: 1.25rem;
 }
 
 a {
@@ -47,7 +45,55 @@ a:hover {
         color: #fcfcfc;
     }
 
-    h2, h3 {
+    h1, h2, h3 {
         color: inherit;
     }
+
+    code, .rehype-code-title + div[data-rehype-pretty-code-fragment] {
+        background-color: #1d1d1d!important;
+    }
+
+    code > .line::before, .rehype-code-title {
+        border-color: #f2f2f2!important;
+    }
+}
+
+/* code formatting */
+code {
+	counter-reset: line;
+	background-color: #f2f2f2;
+}
+
+.rehype-code-title + div[data-rehype-pretty-code-fragment] {
+	background-color: #f2f2f2;
+}
+
+pre > code {
+	display: grid;
+    padding: 0.5rem 0;
+    font-size: 14px;
+}
+
+code > .line::before {
+	counter-increment: line;
+	content: counter(line);
+
+    display: inline-block;
+	min-width: 3ch;
+    text-align: center;
+	padding: 0 0.5ch;
+	margin-right: 1rem;
+	color: gray;
+	border-right: 1px solid black;
+}
+
+.rehype-code-title {
+	margin-bottom: -0.9rem;
+	position: relative;
+	padding: 0.5em 0.5em;
+	border-bottom: 1px solid black;
+	font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter',
+		'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco,
+		'Courier New', Courier, monospace;
+    font-size: 16px;
 }
