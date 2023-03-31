@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/58738637?v=4" />
+</svelte:head>
+
 <section>
 	<img alt="profile photograph" src="https://avatars.githubusercontent.com/u/58738637?v=4" />
 	<div>
