@@ -1,18 +1,24 @@
+<script>
+	import { dataset_dev } from "svelte/internal";
+
+
+	const bruh = import.meta.glob('../../routes/article/**/*.md');
+</script>
+
 <section>
 	<ul>
-		<li>
-			<h2><a href="/">Tunneling SSH using Cloudflare</a></h2>
-			<p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
-		</li>
-		<li>
-			<h2><a href="/">Effectively cooling your Raspberry Pi</a></h2>
-			<p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
-		</li>
-		<li>
-			<h2><a href="/">Simplifying learning to code</a></h2>
-			<p class="subtitle"><time datetime="2023-01-04">Jan 4, 2023</time></p>
-		</li>
-	</ul>
+		{#each Object.entries(bruh) as [_, resolve] (resolve)}
+			{#await resolve()}
+				<p>Loading Posts...</p>
+			{:then data}
+				<li>
+					<h2><a href="/article/{data.metadata.slug}">{data.metadata.title}</a></h2>
+					<p class="subtitle"><time datetime="{data.metadata.datetime}">{data.metadata.date}</time></p>
+				</li>
+			{:catch error}
+				<p>{error.message}</p>
+			{/await}
+			{/each}
 </section>
 
 <style>
