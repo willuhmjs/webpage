@@ -1,12 +1,10 @@
 <script>
-	import { dataset_dev } from 'svelte/internal';
-
-	const bruh = import.meta.glob('../../routes/article/**/*.md');
+	const raw = import.meta.glob('../../routes/article/**/*.md');
 </script>
 
 <section>
 	<ul>
-		{#each Object.entries(bruh) as [_, resolve] (resolve)}
+		{#each Object.entries(raw) as [_, resolve] (resolve)}
 			{#await resolve()}
 				<p>Loading Posts...</p>
 			{:then data}
