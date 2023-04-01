@@ -3,8 +3,8 @@
 </script>
 
 <footer>
-    <a href="https://github.com/willuhmjs/webpage/blob/main{$filepath}"><i class="fa-solid fa-pen-to-square"></i> fix typo</a>
-    <a href="https://github.com/willuhmjs/webpage/blob/main{$filepath}"><i class="fa-brands fa-github"></i> willuhmjs</a>
+    <a href="https://github.com/willuhmjs/webpage/blob/main{$filepath}" target="_blank"><i class="fa-solid fa-pen-to-square"></i> fix typo</a>
+    <a href="https://github.com/willuhmjs/" target="_blank"><i class="fa-brands fa-github"></i> willuhmjs</a>
 </footer>
 
 <style>
