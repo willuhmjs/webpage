@@ -1,9 +1,9 @@
 <svelte:head>
-	<link rel="preload" as="image" href="https://avatars.githubusercontent.com/u/58738637?v=4" />
+	<link rel="preload" as="image" href="pfp.png" />
 </svelte:head>
 
 <section>
-	<img alt="profile photograph" src="https://avatars.githubusercontent.com/u/58738637?v=4" />
+	<img alt="profile photograph" src="pfp.png" />
 	<div>
 		<h1>William Faircloth</h1>
 		<p>software engineer, student, disciple</p>
