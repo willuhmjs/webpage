@@ -33,13 +33,6 @@ a:hover {
 	border-bottom: 2px solid lightgray !important;
 }
 
-@media (prefers-color-scheme: light) {
-	body {
-		background-color: #fcfcfc;
-		color: #1a1a1a;
-	}
-}
-
 @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #1a1a1a;
@@ -61,9 +54,7 @@ a:hover {
 	.rehype-code-title {
 		border-color: #575757 !important;
 	}
-}
 
-@media (prefers-color-scheme: dark) {
 	pre[data-theme='light'],
 	code[data-theme='light'] {
 		display: none;
@@ -74,6 +65,11 @@ a:hover {
 	pre[data-theme='dark'],
 	code[data-theme='dark'] {
 		display: none;
+	}
+
+	body {
+		background-color: #fcfcfc;
+		color: #1a1a1a;
 	}
 }
 
