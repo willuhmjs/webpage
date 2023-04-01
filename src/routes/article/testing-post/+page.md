@@ -1,8 +1,7 @@
 ---
 title: Testing Post
 slug: testing-post
-datetime: 2021-01-01
-date: Jan 1, 2021
+date: 2023-04-01
 ---
 
 There is stuff here.
