@@ -17,15 +17,15 @@
 		column-gap: 2ch;
 		justify-content: center;
 		flex-wrap: wrap;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		text-align: center;
 		padding: 1ch;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
 	}
 
 	i {
 		margin-right: 3px;
 	}
+
 </style>
