@@ -11,7 +11,14 @@
 				<li>
 					<h2><a href="/article/{data.metadata.slug}">{data.metadata.title}</a></h2>
 					<p class="subtitle">
-						<time datetime={data.metadata.datetime}>{new Date(data.metadata.date).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC"})}</time>
+						<time datetime={data.metadata.datetime}
+							>{new Date(data.metadata.date).toLocaleDateString('en-US', {
+								month: 'short',
+								day: 'numeric',
+								year: 'numeric',
+								timeZone: 'UTC'
+							})}</time
+						>
 					</p>
 				</li>
 			{:catch error}
