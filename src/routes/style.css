@@ -82,6 +82,7 @@ a:hover {
 code {
 	counter-reset: line;
 	background-color: #f2f2f2;
+	overflow: scroll;
 }
 
 .rehype-code-title + div[data-rehype-pretty-code-fragment] {
