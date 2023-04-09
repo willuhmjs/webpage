@@ -1,6 +1,7 @@
 ---
 title: Learning to code?
 slug: learning-to-code
+description: My foolproof process for learning how to code.
 date: 2023-04-08
 ---
 
