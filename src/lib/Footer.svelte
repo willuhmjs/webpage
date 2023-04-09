@@ -18,11 +18,10 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		padding: 1ch;
-        padding-bottom: 0;
+		padding-bottom: 0;
 	}
 
 	i {
 		margin-right: 3px;
 	}
-
 </style>
