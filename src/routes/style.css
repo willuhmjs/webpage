@@ -30,7 +30,7 @@ h1 {
 a {
 	color: inherit;
 	text-decoration: none;
-	padding-bottom: 5px;
+	padding-bottom: 0.1rem;
 	border-bottom: 2px dotted lightgray;
 }
 
