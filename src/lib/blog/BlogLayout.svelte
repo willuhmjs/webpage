@@ -34,7 +34,7 @@
 	<meta name="theme-color" content="#08608c" />
 	<link rel="canonical" href="https://willuhmjs.com/article/{slug}" />
 	<meta name="author" content="William Faircloth" />
-	<meta name="keywords" content={keywords} />
+	<meta name="keywords" content="{keywords}, willuhmjs" />
 	<meta name="robots" content="index,follow" />
 
 	<!-- Open Graph Meta Tags -->

@@ -7,7 +7,7 @@
 <svelte:head>
 	<title>willuhmjs.com</title>
 	<meta name="description" content="A software development blog by @willuhmjs." />
-	<meta name="keywords" content="blog, articles, technology, coding, programming, developer" />
+	<meta name="keywords" content="blog, articles, technology, coding, programming, developer, willuhmjs" />
 	<meta name="author" content="William Faircloth" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="theme-color" content="#08608c" />
