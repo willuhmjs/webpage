@@ -18,9 +18,4 @@
 	section {
 		margin-bottom: 2rem;
 	}
-
-	ul {
-		list-style-position: inside;
-		margin-left: 1rem;
-	}
 </style>
