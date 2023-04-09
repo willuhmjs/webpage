@@ -78,6 +78,10 @@ a:hover {
 	}
 }
 
+ul {
+	padding-left: 0;
+}
+
 /* code formatting */
 code {
 	counter-reset: line;
