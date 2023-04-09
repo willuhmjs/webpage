@@ -8,7 +8,10 @@
 <svelte:head>
 	<title>About - willuhmjs.com</title>
 	<meta name="description" content="Some information about me, @willuhmjs." />
-	<meta name="keywords" content="blog, articles, technology, coding, programming, developer, willuhmjs" />
+	<meta
+		name="keywords"
+		content="blog, articles, technology, coding, programming, developer, willuhmjs"
+	/>
 	<link rel="canonical" href="https://www.willuhmjs.com/" />
 
 	<!-- Open Graph Meta Tags -->
