@@ -4,6 +4,7 @@
 	import { filepath } from '$lib/filepath';
 	$filepath = '/src/routes/about/+page.svelte';
 </script>
+
 <svelte:head>
 	<title>About - willuhmjs.com</title>
 	<meta name="description" content="Some information about me, @willuhmjs." />
@@ -27,7 +28,7 @@
 	<meta name="twitter:description" content="Some information about me, @willuhmjs." />
 	<!--<meta name="twitter:image" content="https://www.myblog.com/images/twitter-image.jpg" />-->
 	<meta name="twitter:site" content="@willuhmjs" />
-  	<meta name="twitter:creator" content="@willuhmjs" />
+	<meta name="twitter:creator" content="@willuhmjs" />
 </svelte:head>
 <Card />
 <Bio />
