@@ -5,7 +5,7 @@ description: My foolproof process for learning how to code.
 date: 2023-04-08
 ---
 
-Chances are, you’re probably interested in learning to code. There are various strategies that make learning a programming language less challenging and more fun. My process involves combing multiple different methods together into a foolproof multi-step solution.
+Chances are that you’re probably interested in learning to code. There are various strategies that make learning a programming language less challenging and more fun. My process involves combing multiple different methods together into a foolproof multi-step solution.
 
 ## Find what interests you
 
