@@ -17,6 +17,7 @@
 	<title>{title} - willuhmjs.com</title>
 
 	<meta name="description" content="{description}" />
+	<meta name="theme-color" content="#08608c" />
 
 	<!-- Facebook Meta Tags -->
 	<meta property="og:url" content="https://willuhmjs.com/article/learning-to-code" />
