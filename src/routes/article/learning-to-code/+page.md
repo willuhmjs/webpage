@@ -4,7 +4,7 @@ slug: learning-to-code
 date: 2023-04-08
 ---
 
-Chances are, you're probably interested in learning to code. Learning a programming language is a challenging but fun experience, and there are often multiple ways to go about it. My process involves combing multiple different methods together into a foolproof multistep solution.
+Chances are, you're probably interested in learning to code. Learning a programming language is a challenging but fun experience, and there are often multiple ways to go about it. My process involves combing multiple different methods together into a foolproof multi-step solution.
 
 ##  Find what interests you
 
@@ -23,7 +23,7 @@ After you've chosen a language, enroll in an online course that requires you to 
 
 ## Make many mistakes
 
-After you dip your toes in the water, try and make some cool stuff! You are guaranteed to make various stupid and silly mistakes along the way. While this may seem counterintuitive, this is actually very helpful in giving you a solid foundation in whatever language you are learning.  
+After you dip your toes in the water, try and make some cool projects! You are guaranteed to make various stupid and silly mistakes along the way. While this may seem counterintuitive, this is actually very helpful in giving you a solid foundation in whatever language you are learning.  
 
 For instance, while developing my first Discord bot, I put each piece of command logic inside its own event listener instead of putting them all into one.  
 
