@@ -5,11 +5,11 @@ description: My foolproof process for learning how to code.
 date: 2023-04-08
 ---
 
-Chances are, you're probably interested in learning to code. Learning a programming language is a challenging but fun experience, and there are often multiple ways to go about it. My process involves combing multiple different methods together into a foolproof multi-step solution.
+Chances are that you're probably interested in learning to code. Learning a programming language is a challenging but fun experience, and there are often multiple ways to go about it. My process involves combining multiple different methods together into a foolproof multi-step solution.
 
 ## Find what interests you
 
-It's imperative to choose a language that suits your goals. While some languages like Rust and C++ can do almost everything, others such as JavaScript, Python, Swift, and SQL have their own niche and specific fields. Since I wanted to create a Discord bot, I chose to learn JavaScript because that is what most people were using. Some specializations for different languages include:
+It's imperative to choose a language that suits your goals. While some languages like Rust and C++ can do almost everything, others such as JavaScript, Python, Swift, SQL, and others have their own niche and specific fields. Since I wanted to make a Discord bot, I decided to learn JavaScript because it best suited my objective. Later on I discovered it is a very powerful language that could help me with some other applications as well. Some specializations for different languages include:
 
 - Python - Data analysis, scientific computing, machine learning, and artificial intelligence.
 - HTML/CSS - Building blocks of web development that are used for creating and styling web applications. Almost always used with front-end JavaScript.
