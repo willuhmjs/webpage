@@ -3,6 +3,7 @@ title: Learning to code?
 slug: learning-to-code
 description: My foolproof process for learning how to code.
 date: 2023-04-08
+keywords: learn, code, how to
 ---
 
 Chances are that you’re probably interested in learning to code. There are various strategies that make learning a programming language less challenging and more fun. My process involves combing multiple different methods together into a foolproof multi-step solution.
