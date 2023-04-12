@@ -22,7 +22,7 @@
 	<meta property="og:image" content="https://willuhmjs.com/pfp.png" />
 
 	<!-- Twitter Meta Tags -->
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="About - willuhmjs.com" />
 	<meta name="twitter:description" content="Some information about me, @willuhmjs." />
 	<meta name="twitter:image" content="https://willuhmjs.com/pfp.png" />
