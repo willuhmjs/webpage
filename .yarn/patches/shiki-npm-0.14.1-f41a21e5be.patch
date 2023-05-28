@@ -1,0 +1,46 @@
+diff --git a/dist/index.esm.js b/dist/index.esm.js
+index 55de2c91387a1633bcac10dcab620a11472d2af6..f7049dcc41b91e7c5c27c74959897f7bdf5562d2 100644
+--- a/dist/index.esm.js
++++ b/dist/index.esm.js
+@@ -2569,13 +2569,13 @@ function renderToHtml(lines, options = {}) {
+ }
+ const htmlEscapes = {
+   "&": "&amp;",
+-  "<": "&lt;",
+-  ">": "&gt;",
+-  '"': "&quot;",
+-  "'": "&#39;"
++  "<": "{ '<' }",
++  ">": "{ '>' }",
++  "{": "{ '{' }",
++  "}": "{ '}' }",
+ };
+ function escapeHtml(html) {
+-  return html.replace(/[&<>"']/g, (chr) => htmlEscapes[chr]);
++  return html.replace(/[&<>"'{}]/g, (chr) => htmlEscapes[chr]);
+ }
+ function getLineClasses(lineOptions) {
+   const lineClasses = /* @__PURE__ */ new Set(["line"]);
+diff --git a/dist/index.js b/dist/index.js
+index b423773739e3c8cfaa3037f1456231a352249b1a..a2e2b9c8bda7001034b7f2e2e977b4b560875018 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -2571,13 +2571,13 @@ function renderToHtml(lines, options = {}) {
+ }
+ const htmlEscapes = {
+   "&": "&amp;",
+-  "<": "&lt;",
+-  ">": "&gt;",
+-  '"': "&quot;",
+-  "'": "&#39;"
++  "<": "{ '<' }",
++  ">": "{ '>' }",
++  "{": "{ '{' }",
++  "}": "{ '}' }",
+ };
+ function escapeHtml(html) {
+-  return html.replace(/[&<>"']/g, (chr) => htmlEscapes[chr]);
++  return html.replace(/[&<>"'{}]/g, (chr) => htmlEscapes[chr]);
+ }
+ function getLineClasses(lineOptions) {
+   const lineClasses = /* @__PURE__ */ new Set(["line"]);

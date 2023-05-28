@@ -41,5 +41,9 @@
 	"repository": "https://github.com/willuhmjs/webpage",
 	"author": "William Faircloth <willuhmjs@gmail.com>",
 	"license": "MIT",
-	"packageManager": "yarn@3.5.1"
+	"packageManager": "yarn@3.5.1",
+	"resolutions": {
+		"rehype-pretty-code@^0.9.4": "patch:rehype-pretty-code@npm%3A0.9.4#./.yarn/patches/rehype-pretty-code-npm-0.9.4-e791336711.patch",
+		"shiki@^0.14.1": "patch:shiki@npm%3A0.14.1#./.yarn/patches/shiki-npm-0.14.1-f41a21e5be.patch"
+	}
 }
